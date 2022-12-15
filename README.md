@@ -9,6 +9,8 @@
 ## Overview
 It is a react application and consist in PWA
 
+## Auto Format in VS Code
+[Auto Format with ESLint and Prettier for React TypeScript Project](https://www.aleksandrhovhannisyan.com/blog/format-code-on-save-vs-code-eslint/)
 ## How To Use
 
 ```bash
