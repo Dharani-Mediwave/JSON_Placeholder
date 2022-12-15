@@ -1,8 +1,28 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { getPostsRequest } from './services/posts';
 
 function App() {
+  // Lifecycle method
+  useEffect(() => {
+    getPostRequest();
+  }, []);
+
+  // get post data from api
+  const getPostRequest = async () => {
+    console.log('calling getPost effect');
+    const result = await getPostsRequest();
+    try {
+      if (result) {
+        console.log('result :>>', result);
+        return result;
+      }
+    } catch (error) {
+      console.log('Error :>>', error);
+    }
+  };
+
   return (
     <div className="App">
       <header className="App-header">
