@@ -1,7 +1,7 @@
 import api from './axios-api';
 import { baseEnv } from '../environments/base';
 // import PostsReqsponse from '../types/posts';
-console.log('url :>>', baseEnv.api.getPosts);
+// console.log('url :>>', baseEnv.api.getPosts);
 
 export const getPostsRequest = (): Promise<any> => api.get(baseEnv.api.getPosts);
 
